@@ -1,0 +1,107 @@
+:root {
+  --bg: #f3f7f5;
+  --surface: #ffffff;
+  --text: #24302c;
+  --muted: #65736e;
+  --line: #dce4e0;
+  --primary: #13795b;
+  --primary-strong: #0f6049;
+  --danger: #b42318;
+  --warning: #a15c07;
+  --info: #176b87;
+  --soft: #eaf4ef;
+  --gold: #c2850c;
+  --ink: #101816;
+  font: 16px/1.5 system-ui, "Segoe UI", Roboto, Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(circle at top left, rgba(19, 121, 91, 0.14), transparent 34rem),
+    linear-gradient(180deg, #f8fbfa 0%, var(--bg) 48%, #eef5f2 100%);
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button {
+  border: 1px solid var(--primary);
+  border-radius: 8px;
+  background: var(--primary);
+  color: #ffffff;
+  min-height: 44px;
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: var(--primary-strong);
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 12px;
+  color: var(--text);
+  background: var(--surface);
+}
+
+textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 42px;
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 18px;
+  margin-top: 14px;
+}
+
+#root {
+  min-height: 100svh;
+}
+
+@media (max-width: 760px) {
+  h1 {
+    font-size: 32px;
+  }
+}
